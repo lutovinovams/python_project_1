@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Категория 1</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link rel="stylesheet" href="https://jsdelivr.net">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <!-- Левое меню (Sidebar) -->
+            <div class="col-md-3 col-lg-2 d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <span class="fs-4"><i class="bi bi-bootstrap-fill me-2"></i> Меню</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link text-white opacity-75">
+                            <i class="bi bi-house-door-fill me-2"></i> Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/categories.html" class="nav-link text-white opacity-75">
+                            <i class="bi bi-grid-fill me-2"></i> Категории
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/orders.html" class="nav-link text-white opacity-75">
+                            <i class="bi bi-card-list me-2"></i> Заказы
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contacts.html" class="nav-link text-white opacity-75">
+                            <i class="bi bi-person-lines-fill me-2"></i> Контакты
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <!-- Блок пользователя -->
+                <div class="dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-circle fs-4 me-2"></i>
+                        <strong>Пользователь</strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">Профиль</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Основной контент (Категория 1) -->
+            <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5 bg-light text-center">
+                <h1 class="display-4 fw-normal text-body-emphasis mb-5">Категория 1</h1>
+
+                <!-- Сетка карточек товаров (2 ряда по 3 карточки) -->
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mx-auto" style="max-width: 1100px;">
+                    <!-- Ряд 1: Товар 1 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header py-3"><h4 class="my-0 fw-normal">Товар 1</h4></div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$ 100</h1>
+                                <ul class="list-unstyled mt-3 mb-4 text-muted small">
+                                    <li>10 users included, 2 GB of storage,</li>
+                                    <li>Email support, Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ряд 1: Товар 2 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header py-3"><h4 class="my-0 fw-normal">Товар 1</h4></div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$ 100</h1>
+                                <ul class="list-unstyled mt-3 mb-4 text-muted small">
+                                    <li>10 users included, 2 GB of storage,</li>
+                                    <li>Email support, Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ряд 1: Товар 3 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header py-3"><h4 class="my-0 fw-normal">Товар 1</h4></div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$ 100</h1>
+                                <ul class="list-unstyled mt-3 mb-4 text-muted small">
+                                    <li>10 users included, 2 GB of storage,</li>
+                                    <li>Email support, Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ряд 2: Товар 4 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header py-3"><h4 class="my-0 fw-normal">Товар 1</h4></div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$ 100</h1>
+                                <ul class="list-unstyled mt-3 mb-4 text-muted small">
+                                    <li>10 users included, 2 GB of storage,</li>
+                                    <li>Email support, Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ряд 2: Товар 5 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header py-3"><h4 class="my-0 fw-normal">Товар 1</h4></div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$ 100</h1>
+                                <ul class="list-unstyled mt-3 mb-4 text-muted small">
+                                    <li>10 users included, 2 GB of storage,</li>
+                                    <li>Email support, Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ряд 2: Товар 6 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header py-3"><h4 class="my-0 fw-normal">Товар 1</h4></div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title">$ 100</h1>
+                                <ul class="list-unstyled mt-3 mb-4 text-muted small">
+                                    <li>10 users included, 2 GB of storage,</li>
+                                    <li>Email support, Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
