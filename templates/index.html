@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Прототип</title>
+    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <style>
+        .sidebar { min-height: 100vh; width: 240px; background-color: #1e2125; }
+        .nav-pills .nav-link.active { background-color: #3b71ca; }
+        .product-card { max-width: 280px; width: 100%; }
+        body { display: flex; flex-direction: column; min-height: 100vh; }
+        .main-wrapper { display: flex; flex: 1; }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <header class="sidebar d-flex flex-column flex-shrink-0 p-3 text-white">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none fs-5 fw-bold">
+                <i class="bi bi-bootstrap-fill me-2"></i> Меню
+            </a>
+            <hr>
+            <nav>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="/index.html" class="nav-link active text-white" aria-current="page">
+                            <i class="bi bi-house-door me-2"></i> Главная
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav-link text-white-50"><i class="bi bi-tags me-2"></i> Категории</a></li>
+                    <li><a href="#" class="nav-link text-white-50"><i class="bi bi-grid me-2"></i> Заказы</a></li>
+                    <li><a href="/contacts.html" class="nav-link text-white-50"><i class="bi bi-telephone me-2"></i> Контакты</a></li>
+                </ul>
+            </nav>
+            <hr class="mt-auto">
+            <div class="list-group list-group-flush mb-3 text-start">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-white-50 border-0 p-1 small">Профиль</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-white-50 border-0 p-1 small">Выход</a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-circle me-2 fs-5"></i>
+                    <strong>Пользователь</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser">
+                    <li><a class="dropdown-item" href="#">Настройки</a></li>
+                    <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Выйти</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="flex-grow-1 bg-light p-5">
+            <div class="text-center my-4">
+                <h1 class="display-4 fw-normal">Главная</h1>
+                <p class="text-muted fs-5">Вы находитесь на сайте, предназначенном для продажи товаров.</p>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                    <div class="col d-flex justify-content-center">
+                        <div class="card product-card text-center shadow-sm">
+                            <div class="card-header py-3 bg-body-tertiary">
+                                <h4 class="my-0 fw-normal">Товар 1</h4>
+                            </div>
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h1 class="card-title pricing-card-title">$ 100</h1>
+                                <ul class="list-unstyled mt-3 mb-4 text-muted small">
+                                    <li>10 users included, 2 GB of storage,</li>
+                                    <li>Email support, Help center access</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-outline-primary py-2">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                        <div class="card product-card text-center shadow-sm">
+                            <div class="card-header py-3 bg-body-tertiary">
+                                <h4 class="my-0 fw-normal">Товар 2</h4>
+                            </div>
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h1 class="card-title pricing-card-title">$ 200</h1>
+                                <ul class="list-unstyled mt-3 mb-4 text-muted small">
+                                    <li>20 users included, 10 GB of storage,</li>
+                                    <li>Priority email support, Help center</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-primary py-2" style="background-color: #3b71ca;">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                        <div class="card product-card text-center shadow-sm">
+                            <div class="card-header py-3 bg-body-tertiary">
+                                <h4 class="my-0 fw-normal">Товар 3</h4>
+                            </div>
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h1 class="card-title pricing-card-title">$ 300</h1>
+                                <ul class="list-unstyled mt-3 mb-4 text-muted small">
+                                    <li>30 users included, 15 GB of storage,</li>
+                                    <li>Phone and email support, Help center</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-outline-primary py-2">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <small>&copy; 2026 Прототип веб-приложения. Все права защищены.</small>
+        </div>
+    </footer>
+
+    <script src="https://jsdelivr.net" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
