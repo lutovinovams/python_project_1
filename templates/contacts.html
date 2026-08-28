@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Прототип</title>
+    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://jsdelivr.net">
+    <style>
+        .sidebar { min-height: 100vh; width: 240px; background-color: #1e2125; }
+        .nav-pills .nav-link.active { background-color: #3b71ca; }
+        .feedback-form-container { border: 1px solid #dee2e6; border-radius: 0.375rem; background-color: #ffffff; max-width: 500px; width: 100%; }
+        body { display: flex; flex-direction: column; min-height: 100vh; }
+        .main-wrapper { display: flex; flex: 1; }
+    </style>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <header class="sidebar d-flex flex-column flex-shrink-0 p-3 text-white">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none fs-5 fw-bold">
+                <i class="bi bi-bootstrap-fill me-2"></i>  Меню
+            </a>
+            <hr>
+            <nav>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item"><a href="/index.html" class="nav-link text-white-50"><i class="bi bi-house-door me-2"></i> Главная</a></li>
+                    <li><a href="#" class="nav-link text-white-50"><i class="bi bi-tags me-2"></i> Категории</a></li>
+                    <li><a href="#" class="nav-link text-white-50"><i class="bi bi-grid me-2"></i> Заказы</a></li>
+                    <li><a href="/contacts.html" class="nav-link active text-white"><i class="bi bi-telephone me-2"></i> Контакты</a></li>
+                </ul>
+            </nav>
+            <hr class="mt-auto">
+            <div class="list-group list-group-flush mb-3 text-start">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-white-50 border-0 p-1 small">Профиль</a>
+                <a href="#" class="list-group-item list-group-item-action bg-transparent text-white-50 border-0 p-1 small">Выход</a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-circle me-2 fs-5"></i>
+                    <strong>Пользователь</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser">
+                    <li><a class="dropdown-item" href="#">Настройки</a></li>
+                    <li><a class="dropdown-item" href="#">Личный кабинет</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Выйти</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="flex-grow-1 bg-light p-5">
+            <div class="text-center my-4">
+                <h1 class="display-4 fw-normal">Контакты</h1>
+            </div>
+
+            <div class="container mt-5">
+                <div class="row g-5 justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+                        <div class="feedback-form-container p-4 shadow-sm">
+                            <form action="/submit-feedback" method="POST">
+                                <div class="mb-3">
+                                    <label for="inputName" class="form-label text-muted small fw-medium">Имя</label>
+                                    <input type="text" class="form-control" id="inputName" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inputEmail" class="form-label text-muted small fw-medium">Почта</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-body-tertiary text-muted">@</span>
+                                        <input type="email" class="form-control" id="inputEmail" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="textareaMessage" class="form-label text-muted small fw-medium">Сообщение</label>
+                                    <textarea class="form-control" id="textareaMessage" name="message" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary px-4 py-2" style="background-color: #3b71ca;">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="pe-lg-5">
+                            <h3 class="fw-normal mb-3">Наши контакты</h3>
+                            <p class="text-muted lh-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <small>&copy; 2026 Прототип веб-приложения. Все права защищены.</small>
+        </div>
+    </footer>
+
+    <script src="https://jsdelivr.net" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
